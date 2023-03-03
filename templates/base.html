@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ Configs.ctf_name }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="{{ Configs.ctf_small_icon }}" type="image/x-icon">
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/fonts.css') }}">
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/apt42.css') }}">
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/mo3.css') }}">
+	{% block stylesheets %}
+	{% endblock %}
+
+	{{ Plugins.styles }}
+	<script type="text/javascript">
+		var init = {
+			'urlRoot': "{{ request.script_root }}",
+			'csrfNonce': "{{ Session.nonce }}",
+			'userMode': "{{ Configs.user_mode }}",
+			'userId': "{{ Session.id }}",
+			'start': "{{ Configs.start | tojson }}",
+			'end': "{{ Configs.end | tojson }}",
+			'theme_settings': "{{ Configs.theme_settings | tojson }}"
+		}
+	</script>
+	{{ Configs.theme_header }}
+</head>
+<body>
+	<style>
+		
+		body{
+			background-image:   linear-gradient(to bottom, rgba(8, 8, 8, 0.836), rgba(48, 48, 48, 0.507)), url("https://images8.alphacoders.com/539/539384.jpg") !important;
+			background-position: top;
+			background-size: cover !important;
+		}
+		.jumbotron{
+			background-color: transparent !important;
+		}
+		.nav-item a{
+			color: #327bb2 !important; 
+		}
+		#demo{
+			display: flex !important;
+			justify-content: center;
+			font-size: 40px;
+			gap: 20px;
+			
+			
+		}
+		.title{
+			font-size: 120px !important;
+		
+		}
+		.infocontent{
+			display: flex !important;
+			flex-direction: column !important;
+			justify-content: center;
+			align-items: center;
+			
+
+			
+		}
+		.rowhome{
+			height: 80vh;
+			display: flex !important;
+			flex-direction: column !important;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.bottom_info{
+			display: flex !important;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+
+		}
+		.bottom_info h4{
+			font-family: Hacked;
+			font-size: 50px !important;
+		}
+		#demo div{
+			background-color: #245685;
+			display: flex;
+			flex-direction: column;
+			padding: 8px;
+			border-radius: 4px;
+			justify-content: center;
+			width: 80px;
+			align-items: center;
+		
+		}
+		#demo p,#demo span{
+			margin: 0 !important;
+			padding: 0 !important;
+			font-size: 16px;
+
+			
+		}
+		#demo span{
+			color: rgb(140, 207, 38);
+			font-weight: 900;
+		}
+		#demo p{
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.footer svg{
+			width: 40px;
+		}
+		.footerinfo{
+			display: flex;
+			justify-content: center;
+			gap: 15px;
+			
+		}
+		.form-control{
+		border-color: #888c91;
+	}
+	
+	.nav-link{
+		color: #327cc2 !important;
+	}
+	.nav-link:hover{
+		color: #327cc2 !important;
+	}
+	.input-filled-valid{
+		border-color: #327cc2 !important;
+	}
+	.form-control:focus{
+		border-color: #327cc2 !important;
+	}
+	.btn{
+		background-color: #327cc2 !important;
+	}
+	</style>
+	{% include "components/navbar.html" %}
+
+	<main role="main">
+		{% block content %}
+		{% endblock %}
+	</main>
+
+	
+
+	<script defer src="{{ url_for('views.themes', path='js/vendor.bundle.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', path='js/core.js') }}"></script>
+	<script defer src="{{ url_for('views.themes', path='js/helpers.js') }}"></script>
+
+	{% block entrypoint %}
+	<script defer src="{{ url_for('views.themes', path='js/pages/main.js') }}"></script>
+	{% endblock %}
+
+	{% block scripts %}
+	{% endblock %}
+
+	{{ Plugins.scripts }}
+
+	{{ Configs.theme_footer }}
+</body>
+</html>
