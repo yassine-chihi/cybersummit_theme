@@ -9,7 +9,10 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Score over Time"
+          text: "Score over Time",
+          textStyle: {
+            color: "white"
+          }
         },
         tooltip: {
           trigger: "axis",
@@ -22,7 +25,10 @@ const graph_configs = {
           orient: "horizontal",
           align: "left",
           bottom: 0,
-          data: [name]
+          data: [name],
+          textStyle: {
+            color: "white"
+          }
         },
         toolbox: {
           feature: {
@@ -34,6 +40,9 @@ const graph_configs = {
         },
         xAxis: [
           {
+            axisLabel:{
+              color: "white"
+            },
             type: "category",
             boundaryGap: false,
             data: []
@@ -41,6 +50,9 @@ const graph_configs = {
         ],
         yAxis: [
           {
+            axisLabel:{
+              color: "white"
+            },
             type: "value"
           }
         ],
@@ -112,7 +124,10 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Category Breakdown"
+          text: "Category Breakdown",
+          textStyle: {
+            color: "white"
+          }
         },
         tooltip: {
           trigger: "item"
@@ -128,7 +143,10 @@ const graph_configs = {
           orient: "vertical",
           top: "middle",
           right: 0,
-          data: []
+          data: [],
+          textStyle: {
+            color: "white"
+          }
         },
         series: [
           {
@@ -219,7 +237,10 @@ const graph_configs = {
       let option = {
         title: {
           left: "center",
-          text: "Solve Percentages"
+          text: "Solve Percentages",
+          textStyle: {
+            color: "white"
+          }
         },
         tooltip: {
           trigger: "item"
@@ -234,7 +255,10 @@ const graph_configs = {
           orient: "vertical",
           top: "middle",
           right: 0,
-          data: ["Fails", "Solves"]
+          data: ["Fails", "Solves"],
+          textStyle: {
+            color: "white"
+          }
         },
         series: [
           {

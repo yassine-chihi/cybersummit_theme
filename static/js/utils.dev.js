@@ -56,7 +56,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"pages/notifications": 0
+/******/ 		"utils": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -147,23 +147,9 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./CTFd/themes/watchdogs/assets/js/pages/notifications.js","helpers","vendor","default~pages/challenges~pages/main~pages/notifications~pages/scoreboard~pages/settings~pages/setup~~6822bf1f"]);
+/******/ 	deferredModules.push(["./CTFd/themes/watchdogs/assets/js/utils.js","vendor","graphs"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
-/******/ ({
-
-/***/ "./CTFd/themes/watchdogs/assets/js/pages/notifications.js":
-/*!****************************************************************!*\
-  !*** ./CTFd/themes/watchdogs/assets/js/pages/notifications.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-;
-eval("\n\n__webpack_require__(/*! ./main */ \"./CTFd/themes/watchdogs/assets/js/pages/main.js\");\nvar _jquery = _interopRequireDefault(__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\"));\nvar _utils = __webpack_require__(/*! ../utils */ \"./CTFd/themes/watchdogs/assets/js/utils.js\");\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { \"default\": obj }; }\n(0, _jquery[\"default\"])(function () {\n  (0, _utils.clear_notification_counter)();\n});\n\n//# sourceURL=webpack:///./CTFd/themes/watchdogs/assets/js/pages/notifications.js?");
-
-/***/ })
-
-/******/ });
+/******/ ([]);

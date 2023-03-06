@@ -1,0 +1,19 @@
+
+
+        .csetting input{
+                color: white !important;
+        }
+        .csetting form{
+                background-color: black !important;
+                padding: 60px 40px !important;
+        }
+
+
+        .setting{
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: flex-start !important;
+                align-items: flex-start !important;
+        }
+
+

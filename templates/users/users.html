@@ -1,16 +1,10 @@
 {% extends "base.html" %}
 
 {% block stylesheets %}
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/users.css') }}">
 {% endblock %}
 
 {% block content %}
-<style>
-.table-striped a{
-	color: white;
-}
-#field{
-	color: white !important;
-}
 </style>
 	<div class="jumbotron">
 		<div class="container">

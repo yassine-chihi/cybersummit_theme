@@ -1,29 +1,10 @@
  {% extends "base.html" %}
 
 {% block stylesheets %}
+	<link rel="stylesheet" href="{{ url_for('views.themes', path='css/settings.css') }}">
 {% endblock %}
 
 {% block content %}
-<style>
-	
-	
-	.csetting input{
-		color: white !important;
-	}
-	.csetting form{
-		background-color: black !important;
-		padding: 60px 40px !important;
-	}
-	
-	
-	.setting{
-		display: flex !important;
-		flex-direction: row !important;
-		justify-content: flex-start !important;
-		align-items: flex-start !important;
-	}
-	
-</style>
 <div class="jumbotron">
 	<div class="container">
 		<h1>Settings</h1>

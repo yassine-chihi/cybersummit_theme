@@ -1,0 +1,107 @@
+
+                body{
+                        background-image:   linear-gradient(to bottom, rgba(8, 8, 8, 0.836), rgba(48, 48, 48, 0.507)), url("https://images8.alphacoders.com/539/539384.jpg") !important;
+                        background-position: top;
+                        background-size: cover !important;
+                }
+                .jumbotron{
+                        background-color: transparent !important;
+                }
+                .nav-item a{
+                        color: #327bb2 !important; 
+                }
+                #demo{
+                        display: flex !important;
+                        justify-content: center;
+                        font-size: 40px;
+                        gap: 20px;
+
+
+                }
+                .title{
+                        font-size: 120px !important;
+
+                }
+                .infocontent{
+                        display: flex !important;
+                        flex-direction: column !important;
+                        justify-content: center;
+                        align-items: center;
+
+
+
+                }
+                .rowhome{
+                        height: 80vh;
+                        display: flex !important;
+                        flex-direction: column !important;
+                        justify-content: space-around;
+                        align-items: center;
+                }
+                .bottom_info{
+                        display: flex !important;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 30px;
+
+                }
+                .bottom_info h4{
+                        font-family: Hacked;
+                        font-size: 50px !important;
+                }
+                #demo div{
+                        background-color: #245685;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 8px;
+                        border-radius: 4px;
+                        justify-content: center;
+                        width: 80px;
+                        align-items: center;
+
+                }
+                #demo p,#demo span{
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        font-size: 16px;
+
+
+                }
+                #demo span{
+                        color: rgb(140, 207, 38);
+                        font-weight: 900;
+                }
+                #demo p{
+                        font-size: 30px;
+                        font-weight: bold;
+                }
+                .footer svg{
+                        width: 40px;
+                }
+                .footerinfo{
+                        display: flex;
+                        justify-content: center;
+                        gap: 15px;
+
+                }
+                .form-control{
+                border-color: #888c91;
+        }
+
+        .nav-link{
+                color: #327cc2 !important;
+        }
+        .nav-link:hover{
+                color: #327cc2 !important;
+        }
+        .input-filled-valid{
+                border-color: #327cc2 !important;
+        }
+        .form-control:focus{
+                border-color: #327cc2 !important;
+        }
+        .btn{
+                background-color: #327cc2 !important;
+        }
+

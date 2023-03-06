@@ -37,7 +37,7 @@ const updateScores = () => {
 
 const buildGraphData = () => {
   return CTFd.api.get_scoreboard_detail({ count: 10 }).then(response => {
-    const places = response.data;
+	const places = response.data;
 
     const teams = Object.keys(places);
     if (teams.length === 0) {
@@ -47,8 +47,10 @@ const buildGraphData = () => {
     const option = {
       title: {
         left: "center",
-        text: "Top 40 " + (CTFd.config.userMode === "teams" ? "Teams" : "Users") ,
-        fillerColor:"red"
+        text: "Top 10 " + (CTFd.config.userMode === "teams" ? "Teams" : "Users"),
+        textStyle: {
+          color: "white"
+        }
       },
       tooltip: {
         trigger: "axis",
@@ -58,8 +60,8 @@ const buildGraphData = () => {
       },
       legend: {
         textStyle: {
-          color: "red"
-        },  
+          color: "white"
+        },
         type: "scroll",
         orient: "horizontal",
         align: "left",
@@ -79,6 +81,9 @@ const buildGraphData = () => {
       },
       xAxis: [
         {
+          axisLabel:{
+            color: "white"
+          },
           type: "time",
           boundaryGap: false,
           data: []
@@ -86,6 +91,9 @@ const buildGraphData = () => {
       ],
       yAxis: [
         {
+          axisLabel:{
+            color: "white"
+          },
           type: "value"
         }
       ],
@@ -179,3 +187,4 @@ $(() => {
   setInterval(update, 300000); // Update scores every 5 minutes
   createGraph();
 });
+

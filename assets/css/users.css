@@ -1,0 +1,22 @@
+.user_table a{
+        color: white !important;
+}
+.rank small,.rank h2{
+        color: white;
+}
+.score{
+        background-color: black;
+}
+.score a{
+        color: white;
+}
+.team{
+        background-color: blue !important;
+}
+.table-striped a{
+        color: white;
+}
+#field{
+        color: white !important;
+}
+

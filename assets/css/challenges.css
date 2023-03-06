@@ -1,0 +1,19 @@
+        .challenge-button{
+                background-color: rgb(42, 146, 243) !important;
+                box-shadow: unset !important;
+        }
+        .solved-challenge{
+                background-color: rgb(0, 190, 95) !important;
+                opacity: 1;
+        }
+        .modal-content{
+                border: 0;
+        }
+        .challenge-name{
+                color: rgb(42, 146, 243)        ;
+        }
+        #challenge-solves-names td a{
+                color: white !important;
+
+        }
+
