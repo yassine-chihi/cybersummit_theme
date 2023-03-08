@@ -34,6 +34,9 @@
 			background-position: top;
 			background-size: cover !important;
 		}
+		#main{
+			margin-top: 50px;
+		}
 		.jumbotron{
 			background-color: transparent !important;
 		}
@@ -56,13 +59,10 @@
 			display: flex !important;
 			flex-direction: column !important;
 			justify-content: center;
-			align-items: center;
-			
-
-			
+			align-items: center;	
 		}
 		.rowhome{
-			height: 80vh;
+			height: 70vh;
 			display: flex !important;
 			flex-direction: column !important;
 			justify-content: space-around;
@@ -107,17 +107,17 @@
 			font-weight: bold;
 		}
 		.footer svg{
-			width: 40px;
+			width: 50px;
 		}
 		.footerinfo{
-			display: flex;
-			justify-content: center;
+			display: flex !important;
+			flex-direction: row !important;
+			justify-content: center ;
 			gap: 15px;
-			
 		}
 		.form-control{
-		border-color: #888c91;
-	}
+			border-color: #888c91;
+		}
 	
 	.nav-link{
 		color: #327cc2 !important;
@@ -137,12 +137,10 @@
 	</style>
 	{% include "components/navbar.html" %}
 
-	<main role="main">
+	<main id="main" role="main">
 		{% block content %}
 		{% endblock %}
 	</main>
-
-	
 
 	<script defer src="{{ url_for('views.themes', path='js/vendor.bundle.js') }}"></script>
 	<script defer src="{{ url_for('views.themes', path='js/core.js') }}"></script>
