@@ -1,1 +1,18 @@
-.csetting input{color:#fff!important}.csetting form{background-color:#000!important;padding:60px 40px!important}.setting{display:flex!important;flex-direction:row!important;justify-content:flex-start!important;align-items:flex-start!important}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #7cffff !important;
+}
+.csetting input {
+    color: #fff !important
+}
+
+.csetting form {
+    background-color: #000 !important;
+    padding: 60px 40px !important
+}
+
+.setting {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important
+}
