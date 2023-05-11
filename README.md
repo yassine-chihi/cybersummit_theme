@@ -5,7 +5,7 @@ This theme version v1.0 was created for CyberSummit CTF which took place on 19 m
 <p align="center">
   <img src="screenshots/home.png" alt="main page" width="800" />
   <br>
-  <img src="screenhots/login.png" alt="login page" width="800" />
+  <img src="screenshots/login.png" alt="login page" width="800" />
 </p>
 
 1. [Installation](#installation)
